@@ -3,41 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/hz-icon.svg" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Hunafa Zaky | Blog preview card</title>
   </head>
   <body>
     <main>
       <article class="card">
-        <section
+        <div
           class="header"
-          style="
-            background-image: url(&quot;./assets/images/illustration-article.svg&quot;);
-          "
-        ></section>
-        <section class="content">
-          <div>
-            <div class="badge">Learning</div>
-          </div>
+          style="background-image: url('./assets/images/illustration-article.svg')"
+        ></div>
+        <div class="content">
+          <span class="badge">Learning</span>
           <p class="date">Published 21 Dec 2023</p>
-          <p class="title">HTML & CSS foundations</p>
+          <h1 class="title">
+            <a href="#">HTML &amp; CSS foundations</a>
+          </h1>
           <p class="caption">
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
-        </section>
-        <section class="footer">
+        </div>
+        <div class="footer">
           <img
             src="./assets/images/image-avatar.webp"
             alt=""
@@ -45,8 +33,14 @@
             height="32"
           />
           <p class="user-name">Greg Hooper</p>
-        </section>
+        </div>
       </article>
     </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+      Coded by <a href="https://hunafazaky.github.io/" target="_blank" rel="noreferrer">Hunafa Zaky</a>.
+    </footer>
   </body>
 </html>

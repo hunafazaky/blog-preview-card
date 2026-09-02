@@ -1,0 +1,145 @@
+:root {
+  --clr-yellow: #f4d04e;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-gray-950: #111111;
+  --clr-gray-500: #6b6b6b;
+
+  --ff-base: "Figtree", sans-serif;
+  --fw-medium: 500;
+  --fw-extrabold: 800;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-medium);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: var(--clr-yellow);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(280px, 80vw, 384px);
+  background-color: var(--clr-white);
+  border-radius: 20px;
+  gap: 24px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 0 var(--clr-black);
+  border: solid 1px var(--clr-gray-950);
+}
+
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.content p {
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.badge {
+  background-color: var(--clr-yellow);
+  font-size: clamp(12px, 2.5vw, 14px);
+  font-weight: var(--fw-extrabold);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.date {
+  font-size: clamp(12px, 2.5vw, 14px);
+  font-weight: var(--fw-medium);
+  color: var(--clr-gray-950);
+}
+
+.title {
+  font-size: clamp(20px, 2.5vw, 24px);
+  font-weight: var(--fw-extrabold);
+  margin: 0;
+}
+
+.title a {
+  color: var(--clr-gray-950);
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus-visible {
+  color: var(--clr-yellow);
+  cursor: pointer;
+}
+
+.title a:focus-visible {
+  outline: 2px solid var(--clr-gray-950);
+  outline-offset: 4px;
+}
+
+.caption {
+  font-size: clamp(14px, 2.5vw, 16px);
+  font-weight: var(--fw-medium);
+  color: var(--clr-gray-500);
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: var(--fw-extrabold);
+  color: var(--clr-gray-950);
+}
